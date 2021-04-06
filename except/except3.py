@@ -26,6 +26,6 @@ try:
 	for shop, products in shops.items():
 			for product, price in products.items():
 					if product =='풀':
-						raise StopIteration
+						raise StopIteration #raise를 통해 원하는 예외 발생
 except StopIteration:
 	print("{}: {}원".format(shop, price))
